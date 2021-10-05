@@ -1,7 +1,9 @@
-* {
+body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-family: sans-serif;
+  padding: 3rem 0rem;
 }
+
 h1 {
   border-bottom: 0.1rem solid grey;
   font-size: 1.953rem;
@@ -11,23 +13,31 @@ h2 {
   border-bottom: 0.1rem solid grey;
 }
 
-.container-img > img {
+img {
   width: 100%;
   height: auto;
 }
 
-.container-img > p {
-  text-align: center;
+.container {
+  width: 100%;
+  max-width: 80em;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.container-info > p {
-  font-size: large;
+.container-text {
+  width: 100%;
+  max-width: 80em;
 }
 
+@media (min-width: 40rem) {
+  body {
+    padding: 6rem 0rem;
+  }
+}
 
-
-@media only screen and (min-width: 100rem) {
-  .container-img > p {
-    font-size: smaller;
+@media (min-width: 80rem) {
+  body {
+    padding: 10rem 0;
   }
 }
