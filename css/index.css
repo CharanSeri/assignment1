@@ -6,11 +6,13 @@ body {
 
 h1 {
   border-bottom: 0.1rem solid grey;
-  font-size: 1.953rem;
+  font-size: 2.543rem;
+  font-weight: 550;
 }
 
 h2 {
   border-bottom: 0.1rem solid grey;
+  font-size: 1.5rem;
 }
 
 img {
@@ -22,7 +24,12 @@ img {
   width: 100%;
   max-width: 80em;
   margin: 0 auto;
-  padding: 0;
+  padding-bottom: 2rem;
+}
+.container-header > p {
+  margin-top: -2rem;
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 .container-text {
@@ -30,9 +37,87 @@ img {
   max-width: 80em;
 }
 
-@media (min-width: 40rem) {
+.container-text > p {
+  width: 100%;
+  max-width: 80em;
+  font-size: x-large;
+}
+
+ul {
+  list-style-type: disc;
+  font-size: x-large;
+}
+ol {
+  font-size: x-large;
+  list-style-type: disc;
+}
+
+.fig-caption-align {
+  text-align: center;
+  max-width: 80rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+@media (max-width: 22.5rem) {
   body {
     padding: 6rem 0rem;
+  }
+  h1 {
+    font-size: 1.543rem;
+    font-weight: 550;
+  }
+  
+  h2 {
+    font-size: .824rem;
+  }
+  .container-header > p {
+    margin-top: -1rem;
+    font-size: 0.6rem;
+  }
+  .fig-caption-align {
+    font-weight: 100;
+    padding: .2rem;
+    font-size: x-small;
+  }
+  .container-text > p {
+    width: 100%;
+    max-width: 80em;
+    font-size: smaller;
+  }
+  ol {
+    font-size: smaller;
+  }
+}
+
+@media (max-width: 45rem) {
+  body {
+    padding: 6rem 0rem;
+  }
+  h1 {
+    font-size: 1.843rem;
+    font-weight: 550;
+  }
+  
+  h2 {
+    font-size: 1.244rem;
+  }
+  .container-header > p {
+    margin-top: -1.5rem;
+    font-size: .8rem;
+  }
+  .fig-caption-align {
+    font-weight: 100;
+    padding: .2rem;
+    font-size: smaller;
+  }
+  .container-text > p {
+    width: 100%;
+    max-width: 80em;
+    font-size: larger;
+  }
+  ol {
+    font-size: larger;
   }
 }
 
