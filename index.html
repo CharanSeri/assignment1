@@ -8,13 +8,15 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <section>
-      <head>
+    <!-- add <main> -->
+      <!-- wrap all content in <article> as this is an article on a specific topic -->
+    <section><!-- remove this section -->
+      <head><!-- extra head tag. Likely you meant <header> -->
         <div class="container container-header">
           <h1>Algonquin Provincial Park</h1>
           <p>From Wikipedia, the free encyclopedia</p>
           <figure>
-            <img src="./image/Algonquin_Cache_Lake_Lookout.jpeg" />
+            <img src="./image/Algonquin_Cache_Lake_Lookout.jpeg" /><!-- when using figcaption, you still include the alt, just leave empty: `alt=""` -->
             <figcaption class="fig-caption-align">
               By Original uploader was Ptrbnsn at en.wikipedia - Transferred
               from en.wikipedia, CC BY-SA 3.0,
@@ -22,7 +24,7 @@
             </figcaption>
           </figure>
         </div>
-      <body>
+      <body><!-- extra body tag. Remove -->
         
 <section>
         <div class="container">
@@ -71,17 +73,17 @@
         </div>
         </div>
         </section>
-      </body>
+      </body><!-- extra close body tag. Remove -->
       <footer>
         <div class="container">
           <h2>References</h2>
           <ol>
-            <li>
+            <li><!-- Text content in the <li> should also be wrapped in a <cite> as it is a citation -->
               <a href="#">^ "Le parc provincial Algonquin". Government of Ontario (in
               French). 2009-11-02. Archived from the original </a>on 2019-07-03.
               Retrieved 2019-07-03
             </li>
-            <li>
+            <li><!-- Text content in the <li> should also be wrapped in a <cite> as it is a citation -->
              <a href="#">^ "Frequently Asked Questions (FAQ's) | Algonquin Provincial
               Park | The Friends of Algonquin Park".</a> www.algonquinpark.on.ca.
               Retrieved 2018-01-25.
@@ -89,6 +91,8 @@
           </ol>
         </div>
       </footer>
-    </section>
+    </section><!-- remove this close section -->
+    <!-- close </article> -->
+    <!-- close </main> -->
   </body>
 </html>

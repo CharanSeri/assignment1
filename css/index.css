@@ -1,6 +1,7 @@
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-family: sans-serif;
+  /* You have two font-family properties. Remove the first one. */
   padding: 3rem 0rem;
 }
 
